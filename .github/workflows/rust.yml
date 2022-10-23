@@ -66,7 +66,7 @@ jobs:
         uses: android-actions/setup-android@v2
       - name: Setup Android NDK
         env:
-          NDK_VERSION: 21.3.6528147
+          NDK_VERSION: 25.1.8937393
           TRIPLE: x86_64-linux-android
         run: |
           rm -rf $ANDROID_SDK_ROOT/ndk-bundle
@@ -124,7 +124,7 @@ jobs:
         uses: android-actions/setup-android@v2
       - name: Setup Android NDK
         env:
-          NDK_VERSION: 21.3.6528147
+          NDK_VERSION: 25.1.8937393
         run: |
           rm -rf $ANDROID_SDK_ROOT/ndk-bundle
           sdkmanager --sdk_root=$ANDROID_SDK_ROOT "ndk;$NDK_VERSION" | grep -v = || true
